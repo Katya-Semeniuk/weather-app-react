@@ -5,7 +5,12 @@ import WeatherTemperature from "./WeatherTemperature";
 
 export default function CityWeather(props) {
   if (props.data === null) {
-    return "Data is null";
+    return (
+      <div className="heading">
+        Find the weather for your city and get the temperature in Celsius and
+        Fahrenheit
+      </div>
+    );
   } else {
     const { city, country, condition, temperature, wind, time } = props.data;
 
