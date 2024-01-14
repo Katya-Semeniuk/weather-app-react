@@ -1,6 +1,8 @@
 import "./FormattedDate.css";
 
-export default function FormattedDate({ date }) {
+export default function FormattedDate({ dataTime }) {
+  let date = new Date(dataTime * 1000);
+
   let minutes = date.getMinutes();
   let hours = date.getHours();
   let day = date.getDay();

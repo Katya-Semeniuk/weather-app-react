@@ -12,7 +12,7 @@
   transition: all 200ms ease-out;
 }
 
-.WeatherSearch button {
+.WeatherSearch .search-button {
   padding: 10px 15px;
   background: #885df1;
   border: none;

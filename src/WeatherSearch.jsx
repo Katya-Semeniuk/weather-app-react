@@ -47,7 +47,10 @@ export default function WeatherSearch() {
             />
           </div>
           <div className="col-3">
-            <button type="submit" className="btn btn-primary w-100">
+            <button
+              type="submit"
+              className="btn btn-primary w-100 search-button"
+            >
               Search
             </button>
           </div>

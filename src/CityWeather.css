@@ -14,12 +14,6 @@ ul {
   font-weight: 500;
 }
 
-.current-temperature {
-  display: inline-block;
-  font-size: 46px;
-  font-weight: 700;
-}
-
 .description {
   text-align: end;
   padding-top: 20px;
