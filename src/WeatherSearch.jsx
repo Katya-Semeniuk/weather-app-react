@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "./WeatherSearch.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+
 import CityWeather from "./CityWeather";
 import Forecast from "./Forecast";
 
@@ -32,14 +35,23 @@ export default function WeatherSearch() {
     setQuery(event.target.value);
   }
   return (
-    <div>
+    <div className="WeatherSearch">
       <form onSubmit={handleSubmit}>
-        <input
-          type="search"
-          onChange={handleOnChange}
-          placeholder="Enter the city..."
-        />
-        <button type="submit">Search</button>
+        <div className="row">
+          <div className="col-9">
+            <input
+              type="search"
+              onChange={handleOnChange}
+              placeholder="Enter the city..."
+              className="form-control"
+            />
+          </div>
+          <div className="col-3">
+            <button type="submit" className="btn btn-primary w-100">
+              Search
+            </button>
+          </div>
+        </div>
       </form>
 
       <CityWeather data={fetch} />

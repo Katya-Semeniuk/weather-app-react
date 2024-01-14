@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import "./Forecast.css";
 
 export default function Forecast({ city }) {
   if (!city) {
@@ -16,8 +17,25 @@ export default function Forecast({ city }) {
   axios.get(apiUrl).then(displayForecast);
 
   return (
-    <div>
-      <p>Hallo</p>
+    <div className="footer">
+      <p>
+        This project was coded by
+        <a
+          href="https://github.com/Katya-Semeniuk"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Kateryna Semeniuk
+        </a>
+        and is
+        <a
+          href="https://github.com/Katya-Semeniuk/weather-app-react"
+          target="_blank"
+          rel="noreferrer"
+        >
+          on GitHub
+        </a>
+      </p>
     </div>
   );
 }

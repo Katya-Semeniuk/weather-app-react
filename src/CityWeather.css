@@ -1,0 +1,47 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.city {
+  font-size: 38px;
+  font-weight: 900;
+  margin: 0;
+}
+
+.country {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.details li {
+  color: #2a2828;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+.current-temperature {
+  display: inline-block;
+  font-size: 46px;
+  font-weight: 700;
+}
+
+.description {
+  text-align: end;
+  padding-top: 20px;
+}
+.description li {
+  margin-bottom: 5px;
+}
+
+.highlight {
+  color: #fa0e53;
+  font-weight: 700;
+}
+
+.highlight {
+  color: #fa0e53;
+  font-weight: 700;
+}

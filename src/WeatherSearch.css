@@ -1,0 +1,27 @@
+.WeatherSearch form {
+  margin-bottom: 20px;
+}
+
+.WeatherSearch input {
+  font-size: 16px;
+  padding: 10px 15px;
+  background-color: #f9f7fe;
+  border: none;
+  outline: 1px solid #7f56e5;
+  border-radius: 6px;
+  transition: all 200ms ease-out;
+}
+
+.WeatherSearch button {
+  padding: 10px 15px;
+  background: #885df1;
+  border: none;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  transition: all 200ms ease-out;
+  &:hover,
+  &:focus {
+    background-color: #7f56e5;
+  }
+}
