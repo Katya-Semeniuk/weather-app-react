@@ -13,7 +13,7 @@ export default function WeatherSearch() {
 
   function displayWeather(res) {
     if (!res.data) {
-      return;
+      return "Loading";
     }
     setFetch(res.data);
     setCity(res.data.city);
