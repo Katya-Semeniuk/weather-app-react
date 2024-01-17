@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import CityWeather from "./CityWeather";
 import Footer from "./Footer";
+import WeatherForecast from "./WeatherForecast";
 
 export default function WeatherSearch() {
   let [query, setQuery] = useState("");
@@ -58,6 +59,7 @@ export default function WeatherSearch() {
       </form>
 
       <CityWeather data={fetch} />
+      <WeatherForecast data={fetch} />
       <Footer city={city} />
     </div>
   );
