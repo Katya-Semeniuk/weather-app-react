@@ -17,6 +17,7 @@ export default function WeatherSearch() {
       return "Loading";
     }
     setFetch(res.data);
+
     setCity(res.data.city);
   }
 
@@ -58,8 +59,18 @@ export default function WeatherSearch() {
         </div>
       </form>
 
-      <CityWeather data={fetch} />
-      <WeatherForecast data={fetch} />
+      {fetch === null ? (
+        <div className="heading">
+          Find the weather for your city and get the temperature in Celsius and
+          Fahrenheit
+        </div>
+      ) : (
+        <>
+          <CityWeather data={fetch} />
+          <WeatherForecast coordinates={fetch.coordinates} />
+        </>
+      )}
+
       <Footer city={city} />
     </div>
   );

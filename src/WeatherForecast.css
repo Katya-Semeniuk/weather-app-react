@@ -1,0 +1,34 @@
+.forecast-list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 25px 0 0 0;
+  padding: 0;
+}
+
+.forecast-item {
+  text-align: center;
+  border-radius: 5px;
+  padding: 7px 0;
+  background-color: #deedf37a;
+  padding: 10px;
+}
+
+.day-name {
+  font-size: 18px;
+  margin-bottom: 7px;
+}
+.max-temperature {
+  color: #fa0e53;
+  font-size: 18px;
+}
+
+.min-temperature {
+  color: #fa0e53;
+  opacity: 0.8;
+}
+
+.forecast-description {
+  font-size: 16px;
+  color: rgb(119 115 115);
+}
