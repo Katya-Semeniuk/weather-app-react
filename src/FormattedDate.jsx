@@ -15,15 +15,7 @@ export default function FormattedDate({ dataTime }) {
     hours = `0${hours}`;
   }
 
-  let days = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-  ];
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   let formattedDay = days[day];
 
   return (
